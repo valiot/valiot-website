@@ -2,7 +2,7 @@
   wrapped()
   display flex
   flex-wrap wrap
-  background-color $gray-3
+  background-color transparent
   padding-top 1.5rem
   padding-bottom 1.5rem
   align-items center
@@ -23,23 +23,34 @@
   &-callToAction
     width 100%
     display flex
-    align-items center
     justify-content space-between
+    align-items center
+    position relative
+    height 500px
+
+    
+  &-callToAction-col
+    lost-column 1/2
+    text-align center
+    align-items center
 
 .footer:before
   content ''
-  height 400px
+  height 800px
   background-color $gray-3
   position absolute
-  top -100%
+  top 300px
   left 0
   right 0
   transform skew(0,-12deg)
   z-index -100
   
 .footer-col
+  padding-top 3%
   lost-column 1/6
-  
-  &:first-child
-    margin-right auto
+
+.footer-col--brand
+  margin-right auto
+  // &:first-child
+  //   margin-right auto
   
