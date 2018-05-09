@@ -147,19 +147,19 @@ template {
 [hidden] {
   display: none;
 }
-h1 {
-  font-family: Roboto;
-  font-size: 1.5rem;
-  color: #13293f;
-  letter-spacing: 0; /*recheck*/
-  line-height: 30px; /*recheck*/
-}
-h2 {
+.title {
   font-family: Roboto;
   font-size: 1.25rem;
   color: #13293f;
-  letter-spacing: 0; /*recheck*/
-  line-height: 30px; /*recheck*/
+  letter-spacing: 0 /*recheck*/;
+  line-height: 30px /*recheck*/;
+}
+.title--main {
+  font-family: Roboto;
+  font-size: 1.5rem;
+  color: #13293f;
+  letter-spacing: 0 /*recheck*/;
+  line-height: 30px /*recheck*/;
 }
 p {
   font-family: Roboto;
@@ -167,4 +167,86 @@ p {
   color: #13293f;
   letter-spacing: 0 /*recheck*/;
   line-height: 30px /*recheck*/;
+}
+.tag {
+  font-family: Roboto;
+  font-size: 0.87rem;
+  color: #13293f;
+  letter-spacing: 0.5px /*recheck*/;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+*,
+:before,
+:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  -webkit-font-smoothing: antialiased /*check*/;
+  font-family: 'Roboto', sans-serif;
+  text-rendering: optimizeLegibility /*check*/;
+  font-size: 1rem;
+}
+.btn {
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn--primary {
+  color: #fff;
+  background-color: #008df2;
+}
+.footer-col {
+  flew-grow: 1;
+}
+.footer {
+  padding-left: calc(50% - (1280px / 2));
+  padding-right: calc(50% - (1280px / 2));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #e6edf2;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer ul {
+  list-style: none;
+}
+.footer-item {
+  text-decoration: none;
+}
+.header {
+  padding-left: calc(50% - (1280px / 2));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.logo {
+  display: block;
+}
+.logo--header {
+  max-width: 165px;
+}
+.logo--footer {
+  max-width: 165px;
+}
+.mainNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  float: left;
+}
+.mainNav-item {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  text-decoration: none;
 }
