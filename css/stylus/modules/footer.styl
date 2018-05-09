@@ -1,13 +1,45 @@
 .footer
   wrapped()
   display flex
+  flex-wrap wrap
   background-color $gray-3
   padding-top 1.5rem
   padding-bottom 1.5rem
   align-items center
+  position relative
+  overflow hidden
   
   ul 
     list-style none
+    padding-left 0
     
   &-item 
     text-decoration none
+    color $u-info
+    
+  &-item:hover  
+    color $u-info-shade
+  
+  &-callToAction
+    width 100%
+    display flex
+    align-items center
+    justify-content space-between
+
+.footer:before
+  content ''
+  height 400px
+  background-color $gray-3
+  position absolute
+  top -100%
+  left 0
+  right 0
+  transform skew(0,-12deg)
+  z-index -100
+  
+.footer-col
+  lost-column 1/6
+  
+  &:first-child
+    margin-right auto
+  
