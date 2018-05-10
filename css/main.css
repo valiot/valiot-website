@@ -201,6 +201,90 @@ body {
   color: #fff;
   background-color: #008df2;
 }
+.callToAction {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 500px;
+}
+.callToAction-col {
+  width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.callToAction-col:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.callToAction-col:last-child {
+  margin-right: 0;
+}
+.callToAction-col:nth-child(2n) {
+  margin-right: 0;
+  float: right;
+}
+.callToAction-col:nth-child(2n + 1) {
+  clear: both;
+}
+.feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.feature img {
+  width: 650px;
+}
+.feature-description {
+  width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
+  margin-right: auto;
+}
+.feature-description:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.feature-description:last-child {
+  margin-right: 0;
+}
+.feature-description:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.feature-description:nth-child(3n + 1) {
+  clear: both;
+}
+.feature-img {
+  margin: 0;
+}
+.features {
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .footer {
   padding-left: calc(50% - (1140px / 2));
   padding-right: calc(50% - (1140px / 2));
@@ -228,42 +312,6 @@ body {
 }
 .footer-item:hover {
   color: #0f3b66;
-}
-.footer-callToAction {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-  height: 500px;
-}
-.footer-callToAction-col {
-  width: calc(99.9% * 1/2 - (30px - 30px * 1/2));
-  text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.footer-callToAction-col:nth-child(1n) {
-  float: left;
-  margin-right: 30px;
-  clear: none;
-}
-.footer-callToAction-col:last-child {
-  margin-right: 0;
-}
-.footer-callToAction-col:nth-child(2n) {
-  margin-right: 0;
-  float: right;
-}
-.footer-callToAction-col:nth-child(2n + 1) {
-  clear: both;
 }
 .footer:before {
   content: '';
