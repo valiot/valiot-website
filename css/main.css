@@ -147,6 +147,55 @@ template {
 [hidden] {
   display: none;
 }
+.unslider {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+}
+.unslider-wrap {
+  position: relative;
+}
+.unslider-wrap.unslider-carousel>li {
+  float: left;
+}
+.unslider-vertical>ul {
+  height: 100%;
+}
+.unslider-vertical li {
+  float: none;
+  width: 100%;
+}
+.unslider-fade {
+  position: relative;
+}
+.unslider-fade .unslider-wrap li {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 8;
+}
+.unslider-fade .unslider-wrap li.unslider-active {
+  z-index: 10;
+}
+.unslider li,
+.unslider ol,
+.unslider ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.unslider-arrow {
+  position: absolute;
+  left: 20px;
+  z-index: 2;
+  cursor: pointer;
+}
+.unslider-arrow.next {
+  left: auto;
+  right: 20px;
+}
 .title {
   font-family: Roboto;
   font-size: 1.25rem;
@@ -176,6 +225,12 @@ p {
   line-height: 21px;
   text-transform: uppercase;
 }
+.tag--primary {
+  color: #008df2;
+}
+.tag--highlight {
+  color: #f0f000;
+}
 *,
 :before,
 :after {
@@ -187,6 +242,14 @@ body {
   font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility /*check*/;
   font-size: 1rem;
+}
+figure {
+  padding: 0;
+  margin: 0;
+}
+figure img {
+  width: 100%;
+  display: block;
 }
 .btn {
   background-color: transparent;
@@ -248,9 +311,6 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.feature img {
-  width: 650px;
-}
 .feature-description {
   width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
   margin-right: auto;
@@ -271,7 +331,22 @@ body {
   clear: both;
 }
 .feature-img {
-  margin: 0;
+  width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
+}
+.feature-img:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.feature-img:last-child {
+  margin-right: 0;
+}
+.feature-img:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.feature-img:nth-child(3n + 1) {
+  clear: both;
 }
 .features {
   padding-left: calc(50% - (1140px / 2));
@@ -284,6 +359,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.features--center {
+  display: inline-block;
+  text-align: center;
+  background: #008df2 url("/img/eliot-collaboration.png") no-repeat;
+  height: 100vh;
 }
 .footer {
   padding-left: calc(50% - (1140px / 2));
@@ -395,4 +476,62 @@ body {
 }
 .social-icon {
   margin-right: 1.5rem;
+}
+.unslider-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  text-align: center;
+}
+.unslider-nav ol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+}
+.unslider-arrow {
+  position: absolute;
+  top: 20;
+}
+.walkThrough {
+  padding-left: calc(50% - (1140px / 2));
+  padding-right: calc(50% - (1140px / 2));
+  background-color: #008df2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.walkThrough li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.walkThrough-description {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+  color: #fff;
+}
+.walkThrough-img {
+  width: calc(99.9% * 2/3 - (30px - 30px * 2/3));
+}
+.walkThrough-img:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.walkThrough-img:last-child {
+  margin-right: 0;
+}
+.walkThrough-img:nth-child(3n) {
+  margin-right: 0;
+  float: right;
+}
+.walkThrough-img:nth-child(3n + 1) {
+  clear: both;
+}
+.walkThrough-img img {
+  width: 700px;
 }
