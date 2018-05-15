@@ -1,7 +1,7 @@
 $(document).ready(function () {
   jQuery(document).ready(function($) {
     $('.walkThrough-slider').unslider({
-      autoplay: true,
+      autoplay: false,
       infinite: true,
       nav: true,
       arrows: {
