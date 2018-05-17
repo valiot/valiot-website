@@ -1,5 +1,5 @@
 .unslider-nav
-  width 100%
+  width 100vw
   border-bottom 1px solid white
   padding 30px 0
   position absolute
@@ -13,25 +13,32 @@
     display inline-block
     cursor pointer
     color white
-    margin 0 20px
+    margin 20px
     position relative
     z-index 2
+    
     &::before
-      background-color white
-      display inline-block
+      position absolute
+      top 50%
+      left -3rem
       width 30px
       height 30px
-      border-radius 50%
-      content " "
-      position relative
-      left 24px
-      top 8px
-      z-index -1
+      border-radius 100%
+      content ""
+      transform translateY(-50%)
+      
+  li:nth-child(1):before
+    background url("/img/icon-1.svg") 50% no-repeat, white
+
+  li:nth-child(2):before
+    background url("/img/icon-2.svg") 50% no-repeat, white
+
+  li:nth-child(3):before
+    background url("/img/icon-3.svg") 50% no-repeat, white
 
 .unslider-arrow
   position absolute
   top 50%
-  transform translateY(-50%)
   
 .unslider-active
   font-weight 900
