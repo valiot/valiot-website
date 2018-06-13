@@ -8,16 +8,20 @@
   align-items center
   position relative
   overflow hidden
-  
-  ul 
+
+  +below(75rem)
+    wrapped-left(90%)
+    wrapped-right(90%)
+
+  ul
     list-style none
     padding-left 0
-    
-  &-item 
+
+  &-item
     text-decoration none
     color $u-info
-    
-  &-item:hover  
+
+  &-item:hover
     color $u-info-shade
 
 .footer:before
@@ -30,7 +34,7 @@
   right 0
   transform skew(0,-12deg)
   z-index -100
-  
+
 .footer-col
   padding-top 3%
   lost-column 1/6
@@ -39,4 +43,3 @@
   margin-right auto
   // &:first-child
   //   margin-right auto
-  

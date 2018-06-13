@@ -10,20 +10,31 @@
   lost-column 1/3
   color white
 
+  h2
+    color white
+    font-weight 300
+
+  p
+    color white
+
+
 .walkThrough-img
   lost-column 2/3
-  
-  img 
-    width 700px
+
+  +below(75rem)
+    display none
+
+  img
+    width 100%
 
 .walkThrough-slider
   position relative
-  
-  > ul 
+
+  > ul
     margin-top 100px
     display flex
-  
+
 .walkThrough
   .unslider
       position relative
-      // wrapped()
+      overflow visible

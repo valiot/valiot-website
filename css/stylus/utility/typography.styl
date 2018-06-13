@@ -1,31 +1,43 @@
 .title
-  font-family Roboto
   font-size 1.25rem
   color $text-1
   letter-spacing 0 /*recheck*/
   line-height 30px /*recheck*/
-  
-.title--main
-  font-family Roboto
-  font-size 4rem
-  color white 
-  letter-spacing 0px; /*recheck*/
-  line-height 80px /*recheck*/
+  font-weight 400
 
-p 
-  font-family Roboto
+.title--main
+  font-size 4rem
+  color white
+  letter-spacing -1px
+  line-height 80px
+  font-weight 300
+
+  +below(75rem)
+    font-size 3rem
+    line-height 50px
+
+.title--large
+  font-size 2.25rem
+  color $brand-3
+  letter-spacing -0.5px
+  line-height 39px
+
+  +below(75rem)
+    font-size 1.7rem
+    line-height 30px
+
+p
   font-size 1rem
   color $text-1
   letter-spacing 0 /*recheck*/
-  line-height 30px /*recheck*/
+  line-height 25px /*recheck*/
 
 .tag
-  font-family Roboto
   font-size .87rem
   color $text-1
-  letter-spacing 0.5px /*recheck*/
-  line-height 21px
   text-transform uppercase
+  font-weight 700
+  letter-spacing 2px
 
 //Should I leave this name?
 .tag--primary
@@ -34,3 +46,14 @@ p
 //Should I leave this name?
 .tag--highlight
   color $brand-4
+
+.text--subhead
+  font-size 1.25rem
+  color $text-1
+  letter-spacing 0
+  line-height 30px
+  font-weight 300
+
+  +below(75rem)
+    font-size 1rem
+    line-height 25px

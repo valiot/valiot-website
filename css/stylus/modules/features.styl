@@ -2,15 +2,21 @@
   wrapped()
   display flex
   flex-wrap wrap
-  align-items center
+
+  h2
+    color $brand-2
 
 .features--center
-  wrapped
   display inline-block
   text-align center
   background $brand-3 url(/img/eliot-collaboration.png) no-repeat center bottom
   height 100vh
-  
-  .tag 
+  padding-top 2rem
+
+  .title--large
     color white
-  
+    font-weight 300
+
+  p
+    wrapped(600px)
+    color white

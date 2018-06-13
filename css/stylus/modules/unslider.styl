@@ -1,32 +1,33 @@
 .unslider-nav
-  width 100vw
   border-bottom 1px solid white
-  padding 30px 0
+  padding 2rem
   position absolute
   top 0
-  
-.unslider-nav ol 
+  left 0
+  right 0
+
+.unslider-nav ol
   list-style none
   text-align center
-  
-  li 
+
+  li
     display inline-block
     cursor pointer
     color white
-    margin 20px
+    margin-right 4rem
     position relative
     z-index 2
-    
+
     &::before
       position absolute
       top 50%
-      left -3rem
+      left -2.5rem
       width 30px
       height 30px
       border-radius 100%
       content ""
       transform translateY(-50%)
-      
+
   li:nth-child(1):before
     background url("/img/icon-1.svg") 50% no-repeat, white
 
@@ -36,10 +37,26 @@
   li:nth-child(3):before
     background url("/img/icon-3.svg") 50% no-repeat, white
 
+
 .unslider-arrow
   position absolute
   top 50%
-  
+
+.unslider-arrow.prev
+  left -100px
+
+.unslider-arrow.next
+  right -100px
+
 .unslider-active
   font-weight 900
-  
+
+.unslider-list
+  display flex
+  margin-top 2rem
+
+  .list
+    margin-right 2rem
+
+    li
+      margin-bottom 1rem
