@@ -487,7 +487,6 @@ figure img {
 @media only screen and (max-width: 75rem) {
   .footer {
     padding-left: calc(50% - (90% / 2));
-    padding-right: calc(50% - (90% / 2));
   }
 }
 .footer ul {
@@ -531,6 +530,30 @@ figure img {
 }
 .footer-col:nth-child(6n + 1) {
   clear: both;
+}
+@media only screen and (max-width: 75rem) {
+  .footer-col {
+    width: auto;
+    padding-right: calc(50% - (90% / 2));
+  }
+  .footer-col:last-child {
+    float: none;
+    clear: none;
+    margin-right: 0;
+    width: auto;
+  }
+  .footer-col:nth-child(1n) {
+    float: none;
+    clear: none;
+    margin-right: 0;
+    width: auto;
+  }
+  .footer-col:nth-child(1n + 1) {
+    float: none;
+    clear: none;
+    margin-right: 0;
+    width: auto;
+  }
 }
 .footer-col--brand {
   margin-right: auto;
