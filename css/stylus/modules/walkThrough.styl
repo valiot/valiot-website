@@ -4,11 +4,18 @@
   wrapped()
   display flex
 
+  +below(75rem)
+    display inherit
+
 
 .walkThrough-description
   align-items center
   lost-column 1/3
   color white
+
+  +below(75rem)
+    lost-column 3/3
+    wrapped(70%)
 
   h2
     color white

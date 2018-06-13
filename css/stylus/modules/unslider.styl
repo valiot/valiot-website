@@ -1,10 +1,13 @@
 .unslider-nav
   border-bottom 1px solid white
-  padding 2rem
+  padding 2rem 0
   position absolute
   top 0
   left 0
   right 0
+
+  +below(75rem)
+    padding-left 2rem
 
 .unslider-nav ol
   list-style none
@@ -37,10 +40,16 @@
   li:nth-child(3):before
     background url("/img/icon-3.svg") 50% no-repeat, white
 
+  li:nth-child(3)
+    margin-right 0
+
 
 .unslider-arrow
   position absolute
   top 50%
+
+  +below(75rem)
+    display none
 
 .unslider-arrow.prev
   left -100px
@@ -54,6 +63,9 @@
 .unslider-list
   display flex
   margin-top 2rem
+
+  +below(75rem)
+    margin-bottom 2rem
 
   .list
     margin-right 2rem

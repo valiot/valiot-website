@@ -13,6 +13,11 @@
   height 100vh
   padding-top 2rem
 
+  +below(75rem)
+    background $brand-3
+    height 60%
+    padding 4rem 0
+
   .title--large
     color white
     font-weight 300
@@ -20,3 +25,7 @@
   p
     wrapped(600px)
     color white
+
+    +below(75rem)
+      wrapped-left(90%)
+      wrapped-right(90%)
