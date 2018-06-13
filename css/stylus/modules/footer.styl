@@ -1,0 +1,48 @@
+.footer
+  wrapped()
+  display flex
+  flex-wrap wrap
+  background-color transparent
+  padding-top 1.5rem
+  padding-bottom 1.5rem
+  align-items center
+  position relative
+  overflow hidden
+
+  +below(75rem)
+    wrapped-left(90%)
+
+  ul
+    list-style none
+    padding-left 0
+
+  &-item
+    text-decoration none
+    color $u-info
+
+  &-item:hover
+    color $u-info-shade
+
+.footer:before
+  content ''
+  height 800px
+  background-color $gray-3
+  position absolute
+  top 300px
+  left 0
+  right 0
+  transform skew(0,-12deg)
+  z-index -100
+
+.footer-col
+  padding-top 3%
+  lost-column 1/6
+
+  +below(75rem)
+    lost-column none
+    wrapped-right(90%)
+
+.footer-col--brand
+  margin-right auto
+  // &:first-child
+  //   margin-right auto
