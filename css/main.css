@@ -295,7 +295,7 @@ figure img {
 }
 .about .title {
   color: #008df2;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 .btn {
   background-color: transparent;
@@ -336,6 +336,54 @@ figure img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.case {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3rem 0 0 0;
+}
+.case h2 {
+  color: #0065ad;
+}
+.clients {
+  background-color: #0065ad;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 0 6rem 0;
+}
+.clients-logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+.clients p {
+  width: 30%;
+  text-align: center;
+  color: #fff;
 }
 .feature {
   display: -webkit-box;
@@ -442,7 +490,7 @@ figure img {
   display: inline-block;
   text-align: center;
   background: #008df2 url("/img/eliot-collaboration.png") no-repeat center bottom;
-  height: 100vh;
+  height: 80vh;
   padding-top: 2rem;
 }
 @media only screen and (max-width: 75rem) {
@@ -591,7 +639,8 @@ figure img {
   z-index: 1;
 }
 .home-main {
-  background-image: linear-gradient(45deg, #0065ad 0%, #002845 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#0065ad), color-stop(85%, #002845));
+  background-image: linear-gradient(0deg, #0065ad 0%, #002845 85%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,7 +716,7 @@ figure img {
   display: inline-block;
   cursor: pointer;
   color: #fff;
-  margin-right: 4rem;
+  margin-right: 6rem;
   position: relative;
   z-index: 2;
 }
@@ -677,19 +726,18 @@ figure img {
   left: -2.5rem;
   width: 30px;
   height: 30px;
-  border-radius: 100%;
   content: "";
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
 .unslider-nav ol li:nth-child(1):before {
-  background: url("/img/icon-1.svg") 50% no-repeat, #fff;
+  background: url("/img/icon-1.svg") 50% no-repeat;
 }
 .unslider-nav ol li:nth-child(2):before {
-  background: url("/img/icon-2.svg") 50% no-repeat, #fff;
+  background: url("/img/icon-2.svg") 50% no-repeat;
 }
 .unslider-nav ol li:nth-child(3):before {
-  background: url("/img/icon-3.svg") 50% no-repeat, #fff;
+  background: url("/img/icon-3.svg") 50% no-repeat;
 }
 .unslider-nav ol li:nth-child(3) {
   margin-right: 0;
